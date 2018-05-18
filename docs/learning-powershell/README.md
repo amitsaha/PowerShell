@@ -93,6 +93,8 @@ Note that all bash commands should continue working on PowerShell session.
 | mkdir               |New-Item -ItemType Directory |Create a new folder
 | touch test.txt      |New-Item -Path test.txt      |Create a new empty file
 | cat test1.txt test2.txt         |Get-Content test1.txt, test2.txt       |Display files contents
+| head -10 test1.txt              |Get-Content test1.txt -head 10         |Display the first 10 lines
+| tail -10 test1.txt              |Get-Content test1.txt -tail 10         |Display the last 10 lines
 | cp ./source.txt ./dest/dest.txt |Copy-Item source.txt dest/dest.txt     |Copy a file
 | cp -r ./source ./dest           |Copy-Item ./source ./dest -Recurse     |Recursively copy from one folder to another
 | mv ./source.txt ./dest/dest.txt |Move-Item ./source.txt ./dest/dest.txt |Move a file to other folder
